@@ -1,13 +1,84 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  height: 1000px;
+}
+header{
+  position: relative;
+  z-index: 2;
+  background-color: #333;
+}
+.header-inner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #fff;
+  cursor: default;
+}
+.logo span{
+  color: #FFFF00;
+}
+.bars{
+  font-size: 26px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  transition: color 0.6s ease;
+}
+.bars:hover{
+  color: #FFFF00;
+}
+.nav-link{
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+.nav-link:hover{
+  color: #FFFF00;
+}
+.mobile-menu{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #222;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px){
+  .bars{
+    display: block;
+  }
+  
+  .nav-menu{
+    display: none;
+  }
+  
+  .active{
+  left: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: left 0.6s ease-in-out;
+  }
+  
+  .nav-link{
+    font-size: 24px;
+    margin: 30px 0;
+  }
 }
