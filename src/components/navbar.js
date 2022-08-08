@@ -5,7 +5,7 @@ const Navbar = () => {
                 <header>
                     <div className="header-inner">
                         <h2 className="logo">LO<span>GO</span></h2>
-                        <i id="bars" className="fas fa-bars bars"></i>
+                        <i id="bars" className="fa fa-navicon bars"></i>
                         <nav className="nav-menu">
                         <a href="#" className="nav-link">Home</a>
                         <a href="#" className="nav-link">About</a>
