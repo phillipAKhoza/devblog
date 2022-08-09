@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
-
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
   const handleClick = () => {
     setClick(!click);
     // console.log(click);
@@ -36,12 +36,12 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 exact
-                to="/about"
+                to="/create"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                About
+                Write a Blog
               </Link>
             </li>
             <li className="nav-item">
@@ -55,17 +55,27 @@ const Navbar = () => {
                 Blog
               </Link>
             </li>
-            <li className="nav-item">
+            { !isLoggedIn ? (<li className="nav-item">
               <Link
                 exact
-                to="/contact"
+                to="/login"
                 activeClassName="active"
                 className="nav-links"
                onClick={click ? handleClick : null}
               >
-                Contact 
+                LogIn 
               </Link>
-            </li>
+            </li>) : (<li className="nav-item">
+              <Link
+                exact
+                to="/login"
+                activeClassName="active"
+                className="nav-links"
+               onClick={click ? handleClick : null}
+              >
+                Profile 
+              </Link>
+            </li>)}
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
