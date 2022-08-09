@@ -1,0 +1,19 @@
+
+.home {
+    color: #316685;
+    /* text-align: center; */
+    /* font-size: calc(1.5rem + 2vw); */
+    margin-top: 20px;
+    padding: 20px;
+    
+    
+}
+.home .blogs-container{
+      text-decoration: none;
+      list-style: none;
+
+  }
+
+  .home .blogs-container li{
+    padding: 20px 5px;
+}
