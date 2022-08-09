@@ -68,7 +68,7 @@ const Navbar = () => {
             </li>) : (<li className="nav-item">
               <Link
                 exact
-                to="/login"
+                to="/profile"
                 activeClassName="active"
                 className="nav-links"
                onClick={click ? handleClick : null}
