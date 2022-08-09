@@ -3,17 +3,32 @@
     color: #316685;
     /* text-align: center; */
     /* font-size: calc(1.5rem + 2vw); */
-    margin-top: 20px;
-    padding: 20px;
+    /* margin-top: 20px;
+    padding: 20px; */
     
     
 }
 .home .blogs-container{
       text-decoration: none;
       list-style: none;
+      width: 100%;
+      padding: 0;
 
   }
 
-  .home .blogs-container li{
-    padding: 20px 5px;
-}
+.card {
+    margin: 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .user-interaction{
+    padding: 10px;
+  }
+
+  .user-interaction .fa{
+    padding: 0px 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
