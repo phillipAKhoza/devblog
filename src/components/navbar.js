@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const handleClick = () => {
     setClick(!click);
-    console.log(click);
+    // console.log(click);
     }
   const Close = () => {
     setClick(false);
