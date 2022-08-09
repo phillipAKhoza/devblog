@@ -1,5 +1,8 @@
-const bars = document.getElementById('bars');
+console.log("running updated");
+const bars = document.querySelector('.bars');
+console.log(bars);
 const mobileMenu = document.getElementById('mobileMenu');
-bars.addEventListener('click', function() {
-  mobileMenu.classList.toggle('active')
-})
+bars.addEventListener('click', ()=>{console.log("clicked");}
+)
+
+// function() {mobileMenu.classList.toggle('active')}
