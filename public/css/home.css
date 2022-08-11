@@ -102,3 +102,9 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+.read-more:hover{
+  color: #535353;
+  font-weight: bold;
+  cursor: pointer;
+}
