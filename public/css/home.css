@@ -1,10 +1,6 @@
 
 .home {
     color: #316685;
-    /* text-align: center; */
-    /* font-size: calc(1.5rem + 2vw); */
-    /* margin-top: 20px;
-    padding: 20px; */
     margin-top: 20px;
     
 }
@@ -30,7 +26,6 @@
 .header-section{
   display: flex;
   align-items: center;
-  /* margin: 0 20px; */
 }
 
 .header-section h5{
@@ -44,6 +39,12 @@
     padding: 0px 10px;
     cursor: pointer;
     font-size: 18px;
+  }
+  .user-interaction .fa:hover{
+    padding: 0px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #0c00b4;
   }
   .right-section{
     padding: 0;
@@ -93,4 +94,11 @@
     padding: 10px 0;
     margin: 10px 0;
     cursor: pointer;
+    font-size: 20px;
   }
+
+.read-more{
+  color: #0c00b4;
+  font-weight: bold;
+  cursor: pointer;
+}
